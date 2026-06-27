@@ -33,12 +33,27 @@ a.btn {
 }
 a.btn:hover { transform: translateY(-3px); background: rgba(255,255,255,0.09); }
 a.btn .icon { width:20px; height:20px; display:inline-block; flex: 0 0 20px; }
-a.roblox { background: linear-gradient(90deg,#ffcc00,#ff5a00); color:#111; }
 
-/* Edit button */
-.edit-links {
-  position:absolute; top:18px; right:18px; background:rgba(0,0,0,0.45); color:#fff;
-  border:1px solid rgba(255,255,255,0.06); padding:8px 10px; border-radius:8px; cursor:pointer; font-size:14px;
+/* Discord button styling - EDIT HERE */
+a.discord-btn {
+  background: rgba(88, 101, 242, 0.2);
+  border: 1px solid rgba(88, 101, 242, 0.4);
+  color: #fff;
+}
+a.discord-btn:hover {
+  background: rgba(88, 101, 242, 0.3);
+  border: 1px solid rgba(88, 101, 242, 0.6);
+}
+
+/* Play button styling - EDIT HERE */
+a.play-btn {
+  background: linear-gradient(90deg, #ffcc00, #ff5a00);
+  border: 1px solid rgba(255, 165, 0, 0.5);
+  color: #111;
+}
+a.play-btn:hover {
+  background: linear-gradient(90deg, #ffd700, #ff6b1a);
+  border: 1px solid rgba(255, 165, 0, 0.8);
 }
 
 /* Audio widget */
@@ -60,29 +75,6 @@ a.roblox { background: linear-gradient(90deg,#ffcc00,#ff5a00); color:#111; }
 
 /* Volume */
 .vol input[type="range"] { width:90px; }
-
-/* Modals and panels */
-.modal { position:fixed; left:50%; top:50%; transform:translate(-50%,-50%); display:none; z-index:120; }
-.modal-card { background:#0b0b0b; color:#fff; border-radius:12px; padding:16px; width:300px;
-  box-shadow:0 20px 60px rgba(0,0,0,0.7); border:1px solid rgba(255,255,255,0.06);
-}
-.modal-card h3 { margin-bottom:8px; }
-.modal-card label { font-size:13px; display:block; margin-top:10px; opacity:0.9; }
-.modal-card input { width:100%; padding:8px 10px; margin-top:6px; background:rgba(255,255,255,0.03);
-  border:1px solid rgba(255,255,255,0.04); color:#fff; border-radius:8px;
-}
-.modal-row { display:flex; gap:8px; margin-top:12px; justify-content:flex-end; }
-
-/* Edit panel */
-.edit-panel { position:fixed; left:50%; top:50%; transform:translate(-50%,-50%); background: #0b0b0b;
-  color:#fff; border-radius:12px; padding:20px; width:360px; box-shadow:0 20px 60px rgba(0,0,0,0.7);
-  border:1px solid rgba(255,255,255,0.06); z-index:100; display:none; gap:10px;
-}
-.edit-panel label { font-size:13px; display:block; margin-top:10px; opacity:0.9; }
-.edit-panel input[type="text"] { width:100%; padding:8px 10px; margin-top:6px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.04); color:#fff; border-radius:8px; }
-.row { display:flex; gap:8px; margin-top:12px; justify-content:flex-end; }
-.btn-primary { background:#5865F2; color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; }
-.btn-ghost { background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.06); padding:8px 12px; border-radius:8px; cursor:pointer; }
 
 /* Responsive */
 @media (max-width:520px){
