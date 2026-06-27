@@ -19,8 +19,8 @@ A modern, responsive landing page for New Boroughs NYC with an admin-protected l
 
 ```
 index.html          — Main landing page
-css/styles.css      — All styling (layout, buttons, audio widget, modals)
-js/script.js        — JavaScript (audio controls, admin gating, link persistence)
+styles.css          — All styling (layout, buttons, audio widget, modals)
+script.js           — JavaScript (audio controls, admin gating, link persistence)
 background.gif      — Background animation (place in root)
 logo.png            — Game logo (place in root)
 music.mp3           — Background music (place in root)
@@ -36,7 +36,7 @@ Place these files in the **root directory** (same level as index.html):
 - `music.mp3` — Background music file
 
 ### 2. Change Admin Password
-Edit `js/script.js` and find this line:
+Edit `script.js` and find this line:
 ```javascript
 const ADMIN_PASSWORD = 'changeme';
 ```
@@ -53,7 +53,7 @@ Replace `'changeme'` with a secure password. This is used to access the "Edit Li
 5. Click "Save" — changes persist to localStorage
 
 **Via Code:**
-Edit the `DEFAULTS` object in `js/script.js`:
+Edit the `DEFAULTS` object in `script.js`:
 ```javascript
 const DEFAULTS = {
   discord1: { label: 'Discord 1', href: 'https://discord.gg/YOUR_LINK' },
@@ -86,14 +86,14 @@ Then open `http://localhost:8000` in your browser.
 ## Customization
 
 ### Change Colors
-Edit `css/styles.css`:
+Edit `styles.css`:
 - Button colors: Look for `.btn` and `.btn:hover` rules
 - Roblox button gradient: `.roblox` class
 - Audio widget: `.audio-widget` class
 - Modal backgrounds: `.modal-card` class
 
 ### Change Fonts
-Edit `css/styles.css`:
+Edit `styles.css`:
 ```css
 font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 ```
